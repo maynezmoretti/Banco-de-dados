@@ -14,7 +14,7 @@ Dados/linhas.
 |Notebook|Platini|R$5.000,00|
 
 ### Métodos HTTP
-- GET (Leitura)
-- POST (Criação)
-- PUT (Atualizar)
-- DELETE (Deletar)
+- GET (Leitura);
+- POST (Criação);
+- PUT (Atualizar);
+- DELETE (Deletar).
