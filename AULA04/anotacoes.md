@@ -51,7 +51,7 @@ SELECT * FROM produtos
 >1- No Moba, devemos entrar no **Postgres** com o comando `"sudo -u postgres psql"` e digitar `"CREATE DATABASE cidades;"` para criar o banco de dados:
 
 ![alt text](image.png)
-Utilizar o `\l` para verificar se o banco de dados foi criado.
+(Utilizar o `\l` para verificar se o banco de dados foi criado)
 
 >2- No VSCode, entrar na extenção **PostgreSQL** e abrir seu banco de dados ("cidades"):
 
