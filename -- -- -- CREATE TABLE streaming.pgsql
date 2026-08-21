@@ -8,7 +8,7 @@
 -- -- -- INSERT INTO streaming(nome, duração, nota)
 -- -- -- VALUES 
 -- -- -- ('Stranger Things','2718','9'),
--- -- -- ('Outer Banks','2000','8'),
+-- -- -- ('Outer Banks','2500','8'),
 -- -- -- ('As Branquelas','109','6'),
 -- -- -- ('Coraline e o Mundo Secreto','100','9'),
 -- -- -- ('Avatar','162','8'),
