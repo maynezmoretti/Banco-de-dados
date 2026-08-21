@@ -40,5 +40,4 @@
 
 -- -- SELECT * FROM streaming;
 
--- SELECT nome FROM streaming;
--- -- SELECT nota FROM streaming;a
+-- SELECT nome, nota FROM streaming;
