@@ -70,7 +70,7 @@ CREATE TABLE streaming(
 INSERT INTO streaming(nome, duração, nota)
 VALUES 
 ('Stranger Things','2718','9'),
-('Outer Banks','2000','8'),
+('Outer Banks','2500','8'),
 ('As Branquelas','109','6'),
 ('Coraline e o Mundo Secreto','100','9'),
 ('Avatar','162','8'),
@@ -112,10 +112,50 @@ SELECT * FROM streaming;
 
 >7- Para consultar somente o ***nome*** e ***nota*** dos filmes, utilizar os comandos:
 ```sql
-SELECT nome FROM streaming;
-SELECT nota FROM streaming;
+SELECT nome, nota FROM streaming;
 ```
 ![alt text](image-3.png)
--
+
+>8- Para atualizar a ***nota*** de 5 filmes, utilizar o comando:
+```sql
+UPDATE streaming
+SET nota = 8
+WHERE nome = 'Maze Runner: Prova de Fogo';
+
+UPDATE streaming
+SET nota = 9
+WHERE nome = 'Maze Runner: Correr ou Morrer';
+
+UPDATE streaming
+SET nota = 10
+WHERE nome = 'As Branquelas';
+
+UPDATE streaming
+SET nota = 9
+WHERE nome = 'Maze Runner: A Cura Mortal';
+
+UPDATE streaming
+SET nota = 10
+WHERE nome = '10 Coisas que Eu Odeio em Você';
+```
+
+>9- A tabela ficará assim:
+
 ![alt text](image-4.png)
----
+
+>10- Para apagar os 5 filmes com avaliação mais baixa, utilizar os comandos:
+```sql
+DELETE FROM streaming WHERE nome = 'Pocahontas';
+
+DELETE FROM streaming WHERE nome = 'Como Perder um Homem em 10 Dias';
+
+DELETE FROM streaming WHERE nome = 'Moana 2';
+
+DELETE FROM streaming WHERE nome = 'A Bela e a Fera';
+
+DELETE FROM streaming WHERE nome = 'Avatar 3';
+```
+
+>11- A tabela ficará assim:
+
+![alt text](image-5.png)
