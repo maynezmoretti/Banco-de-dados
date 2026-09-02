@@ -44,7 +44,7 @@ Para deletar registros:
 DELETE FROM maiorescidade WHERE nome = 'Xangai';
 ```
 ---
-## Criação do Banco de Dados **STREAMING**
+## Criação do Banco de Dados *STREAMING*
 >1- No Moba, devemos entrar no Postgres com o comando `"sudo -u postgres psql"` e digitar `"CREATE DATABASE streaming;"` para criar o banco de dados:
 
 ![alt text](image.png)
