@@ -13,7 +13,7 @@ Dados/linhas.
 |Celular|Mayne|R$10.000,00|
 |Notebook|Platini|R$5.000,00|
 
-### Métodos HTTP
+### **Métodos HTTP:**
 - GET (Leitura);
 - POST (Criação);
 - PUT (Atualizar);
