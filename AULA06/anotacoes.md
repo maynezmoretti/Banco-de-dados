@@ -153,7 +153,7 @@ CREATE TABLE livros(
     preco DECIMAL (10,2) NOT NULL,
     genero VARCHAR (50) NOT NULL,
     estoque INT NOT NULL,
-    ano_publicacao VARCHAR (4) NOT NULL
+    ano_publicacao INT NOT NULL
 );
 ```
 ---
@@ -168,7 +168,7 @@ SELECT * FROM livros LIMIT 10;
 
 >2. Exiba apenas as colunas nome, autor e preco de todos os livros.
 ```sql
-SELECT nome,autor,preco FROM livros;
+SELECT nome, autor, preco FROM livros;
 ```
 
 ![alt text](image-2.png)
@@ -189,7 +189,7 @@ SELECT DISTINCT autor FROM livros;
 
 >5. Liste os 5 livros mais caros da base (nome e preço).
 ```sql
-SELECT nome,preco FROM livros
+SELECT nome, preco FROM livros
 ORDER BY preco DESC
 LIMIT 5;
 ```
@@ -198,7 +198,7 @@ LIMIT 5;
 
 >6. Liste os 5 livros com menor estoque (nome e estoque).
 ```sql
-SELECT nome,estoque FROM livros
+SELECT nome, estoque FROM livros
 ORDER BY estoque ASC
 LIMIT 5;
 ```
@@ -207,3 +207,50 @@ LIMIT 5;
 >**Bloco 2** - Filtros numéricos
 
 >7. Mostre nome e estoque de todos os livros do gênero Técnico.
+```sql
+SELECT nome, estoque
+FROM livros
+WHERE genero = 'Técnico';
+```
+![alt text](image-7.png)
+
+>8. Mostre nome e preco dos livros que custam mais de R$ 200,00.
+```sql
+SELECT nome, preco
+FROM livros
+WHERE preco > 200;
+```
+![alt text](image-8.png)
+
+>9. Mostre nome e preco dos livros com preço entre R$ 40,00 e R$ 70,00.
+```sql
+SELECT nome, preco
+FROM livros
+WHERE preco BETWEEN 40 AND 70;
+```
+![alt text](image-9.png)
+
+>10. Mostre os livros com estoque abaixo de 5 unidades (situação de reposição urgente).
+```sql
+SELECT nome, estoque
+FROM livros
+WHERE estoque < 5;
+```
+![alt text](image-10.png)
+
+>11. Liste os livros publicados antes de 1900, ordenados do mais antigo para o mais recente.
+```sql
+SELECT nome, ano_publicacao
+FROM livros
+WHERE ano_publicacao < 1900
+ORDER BY ano_publicacao ASC;
+```
+![alt text](image-11.png)
+
+>12. Liste os livros publicados entre 2010 e 2020, mostrando nome, ano e gênero.
+```sql
+SELECT nome, ano_publicacao, genero
+FROM livros
+WHERE ano_publicacao BETWEEN 2010 AND 2020;
+```
+![alt text](image-12.png)
