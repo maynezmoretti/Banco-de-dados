@@ -12,7 +12,7 @@ Realizando verificação do SGBD:
 pg_lsclusters
 ```
 
-Para realizar o acesso ao SGBD **sem senha**, utilizar o comando:
+Para realizar o acesso ao SGBD ***sem senha***, utilizar o comando:
 ```bash
 sudo -u postgres psql
 ```
