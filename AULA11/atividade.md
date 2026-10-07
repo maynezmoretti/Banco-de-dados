@@ -2,7 +2,7 @@
 
 > **1** - Primeiro, criamos o banco de dados no Moba:
 
-![alt text](image.png)
+![alt text](image-10.png)
 
 > **2** - Criamos a primeira tabela, chamada `alunos`:
 ```sql
@@ -60,13 +60,13 @@ INSERT INTO emprestimos (livro, id_aluno) VALUES
 ```sql
 SELECT * FROM alunos;
 ```
-![alt text](image-1.png)
+![alt text](image-11.png)
 
 >**7** - Dados da tabela `emprestimos`:
 ```sql
 SELECT * FROM emprestimos;
 ```
-![alt text](image-2.png)
+![alt text](image-12.png)
 
 > **8** - Para verificar quais os livros que cada aluno emprestou:
 ```sql
